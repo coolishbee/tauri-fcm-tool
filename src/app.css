@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+/* 클래스 기반 다크모드 활성화 */
+@variant dark (&:where(.dark, .dark *));
+
+@import "@skeletonlabs/skeleton";
+@import "@skeletonlabs/skeleton-svelte";
+@import "@skeletonlabs/skeleton/themes/cerberus";
+
+/* 다크 모드 강제 적용 */
+html.dark,
+html.dark body {
+  background-color: var(--body-background-color-dark);
+  color: var(--base-font-color-dark);
+}
